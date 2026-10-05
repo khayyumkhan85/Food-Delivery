@@ -1,0 +1,1 @@
+package com.fooddelivery.order.repository;import org.springframework.data.jpa.repository.JpaRepository;import com.fooddelivery.order.entity.CustomerOrder;import java.util.*;public interface OrderRepository extends JpaRepository<CustomerOrder,Long>{List<CustomerOrder> findByUserId(Long userId);}

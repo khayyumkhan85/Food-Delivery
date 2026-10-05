@@ -1,0 +1,1 @@
+package com.fooddelivery.order.client;import org.springframework.cloud.openfeign.FeignClient;import org.springframework.web.bind.annotation.*;import com.fooddelivery.order.dto.PaymentRequest;import java.util.*;@FeignClient(name="payment-service")public interface PaymentClient{@PostMapping("/api/payments")Map<String,Object> pay(@RequestBody PaymentRequest request);}

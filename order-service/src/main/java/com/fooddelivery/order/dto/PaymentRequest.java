@@ -1,0 +1,1 @@
+package com.fooddelivery.order.dto;public class PaymentRequest{private Long orderId;private double amount;public PaymentRequest(){}public PaymentRequest(Long i,double a){orderId=i;amount=a;}public Long getOrderId(){return orderId;}public void setOrderId(Long v){orderId=v;}public double getAmount(){return amount;}public void setAmount(double v){amount=v;}}

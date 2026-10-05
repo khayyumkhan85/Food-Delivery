@@ -1,0 +1,1 @@
+package com.fooddelivery.restaurant.repository;import org.springframework.data.mongodb.repository.MongoRepository;import com.fooddelivery.restaurant.entity.Restaurant;public interface RestaurantRepository extends MongoRepository<Restaurant,String>{}

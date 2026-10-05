@@ -1,0 +1,1 @@
+package com.fooddelivery.user.mapper; import org.mapstruct.Mapper;import com.fooddelivery.user.entity.User;import com.fooddelivery.user.dto.UserDto;@Mapper(componentModel="spring") public interface UserMapper {UserDto toDto(User u);User toEntity(UserDto d);}

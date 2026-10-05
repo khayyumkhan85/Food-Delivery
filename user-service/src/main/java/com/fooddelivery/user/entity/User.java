@@ -1,0 +1,3 @@
+package com.fooddelivery.user.entity;
+import javax.persistence.*;
+@Entity @Table(name="users") public class User { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @Column(nullable=false) private String name; @Column(nullable=false,unique=true) private String email; private String phone; public Long getId(){return id;} public void setId(Long id){this.id=id;} public String getName(){return name;} public void setName(String n){name=n;} public String getEmail(){return email;} public void setEmail(String e){email=e;} public String getPhone(){return phone;} public void setPhone(String p){phone=p;} }

@@ -1,0 +1,1 @@
+pipeline { agent any; stages { stage('Build'){steps{sh 'mvn clean verify'}} stage('SonarQube'){steps{sh 'mvn sonar:sonar -Dsonar.projectKey=food-delivery'}} stage('Docker'){steps{sh 'docker compose build'}} } }
